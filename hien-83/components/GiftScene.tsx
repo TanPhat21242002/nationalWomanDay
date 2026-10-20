@@ -8,10 +8,10 @@ interface GiftSceneProps {
 }
 
 const MESSAGES = [
-  { emoji: '🌸', title: 'Hạnh phúc', text: 'Mong em luôn mỉm cười, dù cuộc đời có bao điều không như ý.' },
+  { emoji: '🌸', title: 'Hạnh phúc', text: 'Anh thích nhất lúc mình mỉm cười và anh sẽ cố gắng để mình iu luôn cười tươi như thế :3.' },
   { emoji: '💖', title: 'Bình an', text: 'Mong trái tim em luôn nhẹ nhàng và bình yên trong mọi khoảnh khắc.' },
-  { emoji: '🌹', title: 'Yêu thương', text: 'Mong em biết rằng em luôn được yêu thương, không bao giờ đơn độc.' },
-  { emoji: '✨', title: 'Rực rỡ', text: 'Mong em tỏa sáng theo cách của riêng mình — vì em xứng đáng!' },
+  { emoji: '🌹', title: 'Yêu thương', text: 'Mong mình biết rằng mọi điều em luôn có anh kề cạnh và ủng hộ, hông bao giờ đơn độc.' },
+  { emoji: '✨', title: 'Rực rỡ', text: 'Nếu trên thế giới có 100 người chú ý những việc em đã làm thì chắc chắn trong đó có anh, còn nếu chỉ có 1 thì chắc người đó là anh!' },
 ];
 
 export default function GiftScene({ onNext }: GiftSceneProps) {

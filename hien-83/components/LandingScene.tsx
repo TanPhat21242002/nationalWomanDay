@@ -31,13 +31,6 @@ export default function LandingScene({ onNext }: LandingSceneProps) {
     setTimeout(() => setSparkles((prev) => prev.filter((s) => s.id !== id)), 1200);
   };
 
-  // Countdown to birthday
-  const birthday = new Date('2002-07-04');
-  const now = new Date();
-  const nextBirthday = new Date(now.getFullYear(), birthday.getMonth(), birthday.getDate());
-  if (nextBirthday < now) nextBirthday.setFullYear(now.getFullYear() + 1);
-  const daysUntil = Math.ceil((nextBirthday.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
-
   return (
     <div className={styles.container} onClick={handleBgClick}>
       {/* Background gradient circles */}
@@ -46,10 +39,10 @@ export default function LandingScene({ onNext }: LandingSceneProps) {
       <div className={styles.bgBlob3} />
 
       {/* Floating decorative flowers */}
-      {['🌸','🌺','🌷','🌸','💮','🌹','🌸','🌺'].map((f, i) => (
+      {['🌸', '🌺', '🌷', '🌸', '💮', '🌹', '🌸', '🌺'].map((f, i) => (
         <div key={i} className={styles.floatingFlower} style={{
-          top:  `${10 + (i * 11) % 80}%`,
-          left: `${5  + (i * 13) % 90}%`,
+          top: `${10 + (i * 11) % 80}%`,
+          left: `${5 + (i * 13) % 90}%`,
           animationDelay: `${i * 0.7}s`,
           animationDuration: `${4 + i * 0.5}s`,
           fontSize: `${20 + (i * 7) % 24}px`,
@@ -75,30 +68,30 @@ export default function LandingScene({ onNext }: LandingSceneProps) {
         {/* Date badge */}
         <div className={styles.dateBadge}>
           <span>🌸</span>
-          <span>8 tháng 3 · Ngày của em</span>
+          <span>20 tháng 10 · Ngày Phụ Nữ Việt Nam</span>
           <span>🌸</span>
         </div>
 
         {/* Big greeting */}
         <h1 className={styles.greeting}>
-          Chào mừng sinh nhật &amp; 8/3
+          Chúc Mừng Ngày 20/10
         </h1>
 
         <div className={styles.nameWrapper}>
-          <span className={styles.namePre}>của nàng</span>
+          <span className={styles.namePre}>dành tặng em</span>
           <span className={styles.name}>Hiền 🌹</span>
         </div>
 
         <p className={styles.subtitle}>
-          Một món quà nhỏ, gói ghém cả tấm lòng 💕
+          Chúc iu luôn xinh đẹp, rạng rỡ và tràn đầy hạnh phúc 💕
         </p>
 
-        {/* Birthday countdown */}
+        {/* 20/10 Celebration Box */}
         <div className={styles.countdownBox}>
-          <div className={styles.countdownIcon}>🎂</div>
+          <div className={styles.countdownIcon}>💐</div>
           <div className={styles.countdownText}>
-            <span className={styles.countdownLabel}>Sinh nhật 4/7 còn</span>
-            <span className={styles.countdownNum}>{daysUntil} ngày</span>
+            <span className={styles.countdownLabel}>Ngày Phụ Nữ Việt Nam</span>
+            <span className={styles.countdownNum}>20 tháng 10 💖</span>
           </div>
         </div>
 
@@ -115,7 +108,6 @@ export default function LandingScene({ onNext }: LandingSceneProps) {
           Mở quà của em 🎁
         </button>
 
-        <p className={styles.scrollHint}>↓ Cuộn xuống để khám phá</p>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 /* =========================================================
-   Global CSS – Happy 8/3 cho Hiền
+   Global CSS – Ngày Phụ Nữ Việt Nam 20/10 cho Hiền
    Tone màu: hồng & trắng, hoa anh đào
    ========================================================= */
 
@@ -32,6 +32,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+::selection {
+  background: transparent;
 }
 
 html {
@@ -44,6 +53,8 @@ body {
   color: #4a1530;
   overflow-x: hidden;
   min-height: 100vh;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 /* ── Scrollbar ─────────────────────────────────────────── */

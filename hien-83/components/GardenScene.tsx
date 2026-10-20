@@ -35,6 +35,8 @@ export default function GardenScene({ onNext }: GardenSceneProps) {
   const [wishIdx, setWishIdx] = useState(0);
   const [showWish, setShowWish] = useState(false);
   const [canProceed, setCanProceed] = useState(false);
+  const [cursorPos, setCursorPos] = useState<{ x: number; y: number } | null>(null);
+  const [isInside, setIsInside] = useState(false);
   const gardenRef = useRef<HTMLDivElement>(null);
   const idRef = useRef(0);
 
@@ -50,13 +52,35 @@ export default function GardenScene({ onNext }: GardenSceneProps) {
     return () => clearInterval(t);
   }, []);
 
+  // Flower to be planted next
+  const nextEmoji = FLOWER_SET[(idRef.current + 1) % FLOWER_SET.length];
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!gardenRef.current) return;
+    const rect = gardenRef.current.getBoundingClientRect();
+    setCursorPos({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    });
+    if (!isInside) setIsInside(true);
+  };
+
+  const handleMouseEnter = () => {
+    setIsInside(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsInside(false);
+    setCursorPos(null);
+  };
+
   const plantFlower = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!gardenRef.current) return;
     const rect = gardenRef.current.getBoundingClientRect();
     const x = ((e.clientX - rect.left) / rect.width) * 100;
     const y = ((e.clientY - rect.top) / rect.height) * 100;
 
-    if (y < 10 || y > 90) return; // avoid top/bottom edges
+    if (y < 8 || y > 92) return; // avoid outer edges
 
     const id = ++idRef.current;
     const emoji = FLOWER_SET[id % FLOWER_SET.length];
@@ -67,7 +91,7 @@ export default function GardenScene({ onNext }: GardenSceneProps) {
       y,
       emoji,
       grown: false,
-      size: 24 + Math.random() * 20,
+      size: 26 + Math.random() * 20,
       rotation: (Math.random() - 0.5) * 30,
     };
 
@@ -118,9 +142,24 @@ export default function GardenScene({ onNext }: GardenSceneProps) {
         ref={gardenRef}
         className={styles.garden}
         onClick={plantFlower}
+        onMouseMove={handleMouseMove}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
         role="button"
         aria-label="Khu vườn – click để trồng hoa"
       >
+        {/* Flower cursor preview */}
+        {isInside && cursorPos && (
+          <div
+            className={styles.cursorPreview}
+            style={{
+              left: `${cursorPos.x}px`,
+              top: `${cursorPos.y}px`,
+            }}
+          >
+            {nextEmoji}
+          </div>
+        )}
         {/* Ground decoration */}
         <div className={styles.groundDecor}>
           {'🌿🍃🌱🌿🍀🌿🌱🍃🌿🍀🌿🌱'.split('').map((c, i) => (

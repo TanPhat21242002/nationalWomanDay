@@ -100,7 +100,7 @@ export default function LetterScene() {
 
             {/* Letter content */}
             <div className={styles.letterContent}>
-              <p className={styles.letterDate}>20102026</p>
+              <p className={styles.letterDate}>20-10-2026</p>
               <p className={styles.letterGreeting}>Gửi em.</p>
 
               <p className={styles.letterPara}>
@@ -129,7 +129,7 @@ export default function LetterScene() {
               <p className={styles.letterClosing}>Thương em yêu dấu.</p>
 
               {/* Signature */}
-              <p className={styles.letterSig}>— Của anh 🌹</p>
+              <p className={styles.letterSig}> Bà nhỏ iu của anh 🌹</p>
             </div>
 
             {/* Letter footer decor */}
@@ -156,9 +156,9 @@ export default function LetterScene() {
 
           {/* Footer message */}
           <div className={styles.footerMsg}>
-            <p>🌸 Happy Women's Day 8/3 · Hiền ơi anh thương em nhiều lắm 🌸</p>
+            <p>🌸 Chúc mừng Ngày Phụ nữ Việt Nam 20/10 · Hiền ơi anh thương em nhiều lắm 🌸</p>
             <p style={{ fontSize: '0.85rem', opacity: 0.6, marginTop: '8px', fontFamily: 'var(--font-inter)' }}>
-              Sinh nhật 4 tháng 7 · Mãi yêu em nha 🌹
+              20 tháng 10 · Mãi yêu em nha 🌹
             </p>
           </div>
         </div>

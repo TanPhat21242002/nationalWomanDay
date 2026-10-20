@@ -1,6 +1,6 @@
-# Happy 8/3 — Hiền ơi 🌸
+# Chúc mừng Ngày Phụ Nữ Việt Nam 20/10 — Hiền ơi 🌸
 
-Web tương tác dễ thương tặng Hiền nhân dịp 8/3 · Ngày Quốc tế Phụ nữ 💕
+Web tương tác dễ thương tặng Hiền nhân dịp 20/10 · Ngày Phụ Nữ Việt Nam 💕
 
 ## Cài đặt & Chạy
 
@@ -39,9 +39,9 @@ hien-83/
 │   └── globals.css     # CSS toàn cục + animations
 ├── components/
 │   ├── PetalRain.tsx   # Mưa hoa rơi liên tục
-│   ├── LandingScene    # Màn hình chào + countdown sinh nhật
+│   ├── LandingScene    # Màn hình chào mừng 20/10
 │   ├── GiftScene       # Hộp quà + flip cards
-│   ├── GardenScene     # Trồng hoa tương tác
+│   ├── GardenScene     # Trồng hoa tương tác với preview con trỏ
 │   └── LetterScene     # Phong bì + thư tình
 └── ...
 ```
@@ -49,8 +49,8 @@ hien-83/
 ## Tính năng
 - 🌸 Mưa hoa rơi liên tục (PetalRain)
 - 🎁 Hộp quà có hiệu ứng lắc và mở
-- 🃏 Flip cards với lời chúc
-- 🌷 Trồng hoa tương tác (click vào vườn)
-- 💌 Phong bì mở ra lá thư
+- 🃏 Flip cards với lời chúc ngọt ngào
+- 🌷 Trồng hoa tương tác với con trỏ preview bông hoa sắp trồng
+- 💌 Phong bì mở ra lá thư yêu thương
 - 💕 Nút tim gửi yêu thương
-- 🎂 Đếm ngược đến sinh nhật 4/7
+- 💐 Chúc mừng Ngày Phụ Nữ Việt Nam 20/10

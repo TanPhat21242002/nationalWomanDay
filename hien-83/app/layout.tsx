@@ -21,11 +21,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Happy 8/3 Hiền ơi 🌸",
-  description: "Một món quà nhỏ dành tặng Hiền nhân ngày 8/3 — Ngày Quốc tế Phụ nữ",
+  title: "Chúc mừng 20/10 Hiền ơi 🌸",
+  description: "Một món quà nhỏ dành tặng Hiền nhân Ngày Phụ nữ Việt Nam 20/10",
   openGraph: {
-    title: "Happy 8/3 Hiền ơi 🌸",
-    description: "Một món quà nhỏ dành tặng Hiền nhân ngày 8/3",
+    title: "Chúc mừng 20/10 Hiền ơi 🌸",
+    description: "Một món quà nhỏ dành tặng Hiền nhân Ngày Phụ nữ Việt Nam 20/10",
   },
 };
 
