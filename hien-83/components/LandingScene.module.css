@@ -1,0 +1,208 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #fff0f6 0%, #fce7f3 40%, #fff0f6 70%, #ffe4ee 100%);
+  position: relative;
+  overflow: hidden;
+  cursor: crosshair;
+}
+
+/* Background blobs */
+.bgBlob1 {
+  position: absolute;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(244,114,182,0.18) 0%, transparent 70%);
+  top: -150px; right: -150px;
+  animation: spin-slow 30s linear infinite;
+}
+
+.bgBlob2 {
+  position: absolute;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(249,168,212,0.22) 0%, transparent 70%);
+  bottom: -100px; left: -100px;
+  animation: spin-slow 25s linear infinite reverse;
+}
+
+.bgBlob3 {
+  position: absolute;
+  width: 300px; height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(236,72,153,0.12) 0%, transparent 70%);
+  top: 40%; left: 30%;
+  animation: float-gentle 8s ease-in-out infinite;
+}
+
+/* Floating background flowers */
+.floatingFlower {
+  position: absolute;
+  animation: float-gentle ease-in-out infinite;
+  pointer-events: none;
+  user-select: none;
+  filter: blur(0.5px);
+}
+
+/* Click sparkle */
+.sparkle {
+  position: absolute;
+  font-size: 28px;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: bloom 0.4s ease-out, fade-in 0.4s ease-out reverse forwards;
+  animation-delay: 0s, 0.7s;
+  z-index: 10;
+}
+
+/* Content */
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 40px 24px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  max-width: 600px;
+  width: 100%;
+}
+
+.content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Date badge */
+.dateBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.8);
+  border: 1.5px solid var(--rose-200);
+  border-radius: 50px;
+  padding: 8px 24px;
+  font-family: var(--font-inter);
+  font-size: 0.85rem;
+  color: var(--pink-600);
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  margin-bottom: 28px;
+  box-shadow: 0 4px 20px rgba(236,72,153,0.12);
+}
+
+/* Greeting */
+.greeting {
+  font-family: var(--font-dancing);
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  color: #c2185b;
+  font-weight: 600;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+/* Name */
+.nameWrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.namePre {
+  font-family: var(--font-playfair);
+  font-style: italic;
+  color: #ad1457;
+  font-size: clamp(1rem, 3vw, 1.3rem);
+}
+
+.name {
+  font-family: var(--font-dancing);
+  font-size: clamp(3rem, 10vw, 5.5rem);
+  font-weight: 700;
+  background: linear-gradient(135deg, #e91e8c, #f472b6, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  animation: pulse-glow 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+.subtitle {
+  font-family: var(--font-playfair);
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: #c2185b;
+  font-style: italic;
+  margin-bottom: 32px;
+  opacity: 0.8;
+}
+
+/* Countdown */
+.countdownBox {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(12px);
+  border: 1.5px solid var(--rose-200);
+  border-radius: 20px;
+  padding: 16px 32px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 32px rgba(236,72,153,0.15);
+}
+
+.countdownIcon {
+  font-size: 2rem;
+  animation: heartbeat 2s ease-in-out infinite;
+  display: inline-block;
+}
+
+.countdownText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.countdownLabel {
+  font-size: 0.8rem;
+  color: #9e4a6e;
+  font-family: var(--font-inter);
+}
+
+.countdownNum {
+  font-family: var(--font-dancing);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #e91e8c;
+}
+
+/* Hint */
+.hint {
+  font-size: 0.85rem;
+  color: #c2185b;
+  opacity: 0.7;
+  margin-bottom: 20px;
+  font-family: var(--font-inter);
+  animation: fade-in 1s ease-out;
+  min-height: 20px;
+}
+
+/* CTA button */
+.ctaBtn {
+  font-size: 1.3rem !important;
+  padding: 16px 48px !important;
+  margin-bottom: 16px;
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.scrollHint {
+  font-size: 0.8rem;
+  color: #c2185b;
+  opacity: 0.4;
+  font-family: var(--font-inter);
+  animation: float-gentle 2s ease-in-out infinite;
+}
