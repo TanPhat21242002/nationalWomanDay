@@ -162,7 +162,7 @@ export default function GardenScene({ onNext }: GardenSceneProps) {
         )}
         {/* Ground decoration */}
         <div className={styles.groundDecor}>
-          {'🌿🍃🌱🌿🍀🌿🌱🍃🌿🍀🌿🌱'.split('').map((c, i) => (
+          {['🌿', '🍃', '🌱', '🌿', '🍀', '🌿', '🌱', '🍃', '🌿', '🍀', '🌿', '🌱'].map((c, i) => (
             <span key={i} style={{ fontSize: '1.2rem', opacity: 0.6 }}>{c}</span>
           ))}
         </div>

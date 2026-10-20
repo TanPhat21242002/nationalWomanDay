@@ -201,13 +201,22 @@
   text-align: center;
   animation: bounce-in 0.5s ease-out;
   flex-shrink: 0;
-  margin-top: 4px;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1.5px solid rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 10px 24px 12px;
+  box-shadow: 0 8px 24px rgba(236, 72, 153, 0.18);
+  margin-top: 6px;
   margin-bottom: 2px;
+  z-index: 10;
 }
 
 .proceedText {
   font-family: var(--font-dancing);
-  font-size: 1.05rem;
-  color: #c2185b;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #9d174d;
   margin-bottom: 6px;
 }

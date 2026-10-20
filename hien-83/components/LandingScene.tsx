@@ -38,20 +38,6 @@ export default function LandingScene({ onNext }: LandingSceneProps) {
       <div className={styles.bgBlob2} />
       <div className={styles.bgBlob3} />
 
-      {/* Floating decorative flowers */}
-      {['🌸', '🌺', '🌷', '🌸', '💮', '🌹', '🌸', '🌺'].map((f, i) => (
-        <div key={i} className={styles.floatingFlower} style={{
-          top: `${10 + (i * 11) % 80}%`,
-          left: `${5 + (i * 13) % 90}%`,
-          animationDelay: `${i * 0.7}s`,
-          animationDuration: `${4 + i * 0.5}s`,
-          fontSize: `${20 + (i * 7) % 24}px`,
-          opacity: 0.25 + (i % 4) * 0.1,
-        }}>
-          {f}
-        </div>
-      ))}
-
       {/* Click sparkles */}
       {sparkles.map((s) => (
         <div
@@ -79,7 +65,7 @@ export default function LandingScene({ onNext }: LandingSceneProps) {
 
         <div className={styles.nameWrapper}>
           <span className={styles.namePre}>dành tặng em</span>
-          <span className={styles.name}>Hiền 🌹</span>
+          <span className={styles.name}>Hiền🌹</span>
         </div>
 
         <p className={styles.subtitle}>

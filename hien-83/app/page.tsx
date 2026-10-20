@@ -5,7 +5,7 @@ import LandingScene from '../components/LandingScene';
 import GiftScene from '../components/GiftScene';
 import GardenScene from '../components/GardenScene';
 import LetterScene from '../components/LetterScene';
-import PetalRain from '../components/PetalRain';
+import GardenBackground from '../components/GardenBackground';
 
 export type Scene = 'landing' | 'gift' | 'garden' | 'letter';
 
@@ -23,8 +23,8 @@ export default function Home() {
 
   return (
     <main style={{ position: 'relative', minHeight: '100vh', overflow: 'hidden' }}>
-      {/* Always-on petal rain */}
-      <PetalRain />
+      {/* Swaying garden background */}
+      <GardenBackground />
 
       {/* Scene container */}
       <div

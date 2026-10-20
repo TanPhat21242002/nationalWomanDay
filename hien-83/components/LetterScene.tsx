@@ -53,7 +53,6 @@ export default function LetterScene() {
 
       {/* Title */}
       <div className={styles.titleArea}>
-        <p className={styles.dateStamp}>20 · 10 · 2026</p>
         <h2 className={styles.title}>
           {letterVisible ? 'Thư gửi Hiền yêu dấu 💌' : 'Có một lá thư dành cho em...'}
         </h2>
@@ -105,7 +104,7 @@ export default function LetterScene() {
 
               <p className={styles.letterPara}>
                 Chúc em, người con gái anh thương,{' '}
-                <em>một đời bình an,</em> anh mong sao, con đường phía trước của em{' '}
+                <em>một đời bình an,</em> anh mong sao con đường phía trước của em{' '}
                 <em>sẽ luôn tự gạt đi những sóng gió, để em có thể an lòng bước qua</em>{' '}
                 những tháng ngày rộng dài,
               </p>
@@ -119,11 +118,11 @@ export default function LetterScene() {
                 <em>đối diện với bóng tối.</em> Còn nếu cuộc đời vẫn có những đoạn đường
                 chẳng mấy dễ dàng,{' '}
                 <em>
-                  anh sẽ nắm tay em đi qua, dẫu gai có đâm đến bật máu, and if the world
+                  anh sẽ nắm tay em đi qua ngày nắng ngày mưa, and if the world
                   leaves thorns along your way, let me walk beside you,
                 </em>{' '}
                 anh sẽ cùng đi hết,{' '}
-                <em>dù bàn tay có trầy xước cũng chẳng buông em lại một mình.</em>
+                <em>dù có thế nào cũng chẳng buông em lại một mình.</em>
               </p>
 
               <p className={styles.letterClosing}>Thương em yêu dấu.</p>
@@ -157,9 +156,6 @@ export default function LetterScene() {
           {/* Footer message */}
           <div className={styles.footerMsg}>
             <p>🌸 Chúc mừng Ngày Phụ nữ Việt Nam 20/10 · Hiền ơi anh thương em nhiều lắm 🌸</p>
-            <p style={{ fontSize: '0.85rem', opacity: 0.6, marginTop: '8px', fontFamily: 'var(--font-inter)' }}>
-              20 tháng 10 · Mãi yêu em nha 🌹
-            </p>
           </div>
         </div>
       )}

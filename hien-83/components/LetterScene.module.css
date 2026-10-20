@@ -287,12 +287,25 @@
 /* ── Heart Button ──────────────────────────────────────── */
 .heartSection {
   text-align: center;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1.5px solid rgba(255, 255, 255, 0.95);
+  border-radius: 28px;
+  padding: 22px 32px 24px;
+  margin: 32px auto 20px;
+  max-width: 440px;
+  width: 90%;
+  box-shadow: 0 12px 36px rgba(236, 72, 153, 0.16);
+  position: relative;
+  z-index: 5;
 }
 
 .heartLabel {
   font-family: var(--font-dancing);
-  font-size: 1.2rem;
-  color: #c2185b;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #9d174d;
   margin-bottom: 12px;
 }
 
@@ -336,9 +349,10 @@
 
 .heartHint {
   font-family: var(--font-inter);
-  font-size: 0.8rem;
-  color: #c2185b;
-  opacity: 0.55;
+  font-size: 0.88rem;
+  color: #9d174d;
+  opacity: 0.85;
+  font-weight: 500;
   margin-top: 10px;
 }
 
@@ -346,11 +360,19 @@
 .footerMsg {
   text-align: center;
   font-family: var(--font-dancing);
-  font-size: 1.1rem;
-  color: #c2185b;
+  font-size: 1.15rem;
+  color: #9d174d;
   animation: fade-in 1.5s ease-out;
-  padding: 16px 20px;
-  border-top: 1px dashed rgba(249,168,212,0.5);
-  width: 100%;
-  max-width: 620px;
+  padding: 14px 24px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 4px 18px rgba(236, 72, 153, 0.1);
+  margin-top: 16px;
+  width: 90%;
+  max-width: 580px;
+  position: relative;
+  z-index: 5;
 }
