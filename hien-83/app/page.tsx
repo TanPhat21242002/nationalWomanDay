@@ -6,6 +6,7 @@ import GiftScene from '../components/GiftScene';
 import GardenScene from '../components/GardenScene';
 import LetterScene from '../components/LetterScene';
 import GardenBackground from '../components/GardenBackground';
+import MusicPlayer from '../components/MusicPlayer';
 
 export type Scene = 'landing' | 'gift' | 'garden' | 'letter';
 
@@ -23,6 +24,9 @@ export default function Home() {
 
   return (
     <main style={{ position: 'relative', minHeight: '100vh', overflow: 'hidden' }}>
+      {/* Background YouTube Music Player */}
+      <MusicPlayer />
+
       {/* Swaying garden background */}
       <GardenBackground />
 

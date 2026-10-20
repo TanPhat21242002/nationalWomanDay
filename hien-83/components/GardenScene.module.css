@@ -220,3 +220,62 @@
   color: #9d174d;
   margin-bottom: 6px;
 }
+
+/* ── Mobile Responsive & Touch ─────────────────────────── */
+@media (hover: none) {
+  .cursorPreview {
+    display: none !important;
+  }
+  .garden {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px 12px 10px;
+  }
+
+  .title {
+    font-size: clamp(1.4rem, 6vw, 1.85rem);
+  }
+
+  .subtitle {
+    font-size: 0.78rem;
+    margin-bottom: 4px;
+  }
+
+  .wishBubble {
+    font-size: 0.92rem;
+    padding: 3px 14px;
+    min-height: 28px;
+    margin-bottom: 4px;
+    line-height: 20px;
+  }
+
+  .progressBar {
+    width: 170px;
+    height: 5px;
+  }
+
+  .progressLabel {
+    font-size: 0.75rem;
+  }
+
+  .garden {
+    min-height: 180px;
+    border-radius: 16px;
+    margin: 3px 0;
+  }
+
+  .proceedSection {
+    padding: 8px 16px 10px;
+    border-radius: 16px;
+    margin-top: 4px;
+  }
+
+  .proceedText {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+}

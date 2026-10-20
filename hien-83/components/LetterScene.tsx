@@ -155,7 +155,7 @@ export default function LetterScene() {
 
           {/* Footer message */}
           <div className={styles.footerMsg}>
-            <p>🌸 Chúc mừng Ngày Phụ nữ Việt Nam 20/10 · Hiền ơi anh thương em nhiều lắm 🌸</p>
+            <p>🌸 Thanh Hiền ơi, anh thương em nhiều lắm 🌸</p>
           </div>
         </div>
       )}

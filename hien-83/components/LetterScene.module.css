@@ -376,3 +376,88 @@
   position: relative;
   z-index: 5;
 }
+
+/* ── Mobile Responsive ─────────────────────────────────── */
+@media (max-width: 480px) {
+  .container {
+    padding: 24px 12px 40px;
+  }
+
+  .title {
+    font-size: clamp(1.6rem, 6.5vw, 2.2rem);
+  }
+
+  .envelope {
+    width: 250px;
+    height: 165px;
+  }
+
+  .envFlap {
+    border-left-width: 125px;
+    border-right-width: 125px;
+    border-top-width: 82px;
+  }
+
+  .envFoldLeft {
+    border-left-width: 125px;
+    border-top-width: 82px;
+  }
+
+  .envFoldRight {
+    border-right-width: 125px;
+    border-top-width: 82px;
+  }
+
+  .letter {
+    padding: 24px 16px;
+    border-radius: 14px;
+  }
+
+  .letterDate {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+  }
+
+  .letterGreeting {
+    font-size: 0.95rem;
+    margin-bottom: 14px;
+  }
+
+  .letterPara {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    margin-bottom: 14px;
+  }
+
+  .letterQuote {
+    font-size: 0.92rem;
+    padding: 8px 12px;
+    margin-bottom: 14px;
+  }
+
+  .letterSig {
+    font-size: 1.4rem;
+  }
+
+  .heartSection {
+    padding: 16px 20px 18px;
+    margin: 22px auto 14px;
+    border-radius: 20px;
+  }
+
+  .heartLabel {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+  }
+
+  .heartBtn {
+    font-size: 2.8rem;
+  }
+
+  .footerMsg {
+    padding: 10px 16px;
+    font-size: 1rem;
+    border-radius: 16px;
+    margin-top: 12px;
+  }
+}

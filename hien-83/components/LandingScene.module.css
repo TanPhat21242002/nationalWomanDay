@@ -220,3 +220,90 @@
   transform: translateY(-2px) scale(1.03);
   box-shadow: 0 14px 34px rgba(236, 72, 153, 0.5) !important;
 }
+
+/* ── Mobile Responsive ─────────────────────────────────── */
+@media (max-width: 480px) {
+  .content {
+    padding: 24px 18px 22px;
+    width: 92%;
+    border-radius: 26px;
+    margin: 10px auto;
+  }
+
+  .dateBadge {
+    padding: 6px 16px;
+    font-size: 0.78rem;
+    margin-bottom: 14px;
+    gap: 6px;
+  }
+
+  .greeting {
+    font-size: clamp(1.6rem, 6.5vw, 2.1rem);
+    margin-bottom: 6px;
+  }
+
+  .nameWrapper {
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .namePre {
+    font-size: 0.95rem;
+  }
+
+  .name {
+    font-size: clamp(2.6rem, 11vw, 3.6rem);
+  }
+
+  .subtitle {
+    font-size: 0.88rem;
+    margin-bottom: 14px;
+  }
+
+  .countdownBox {
+    padding: 8px 18px;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .countdownIcon {
+    font-size: 1.5rem;
+  }
+
+  .countdownLabel {
+    font-size: 0.75rem;
+  }
+
+  .countdownNum {
+    font-size: 1.45rem;
+  }
+
+  .hint {
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+  }
+
+  .ctaBtn {
+    font-size: 1.12rem !important;
+    padding: 12px 34px !important;
+  }
+}
+
+@media (max-height: 680px) {
+  .content {
+    padding: 18px 16px 16px;
+  }
+  .dateBadge {
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    margin-bottom: 10px;
+  }
+  .countdownBox {
+    margin-bottom: 10px;
+    padding: 6px 14px;
+  }
+  .hint {
+    margin-bottom: 8px;
+  }
+}

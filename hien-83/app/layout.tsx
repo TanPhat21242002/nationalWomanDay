@@ -1,6 +1,13 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Dancing_Script, Inter } from "next/font/google";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
 
 const playfair = Playfair_Display({
   subsets: ["latin", "vietnamese"],
@@ -23,9 +30,15 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Chúc mừng 20/10 Hiền ơi 🌸",
   description: "Một món quà nhỏ dành tặng Hiền nhân Ngày Phụ nữ Việt Nam 20/10",
+  icons: {
+    icon: '/avatar.jpg',
+    shortcut: '/avatar.jpg',
+    apple: '/avatar.jpg',
+  },
   openGraph: {
     title: "Chúc mừng 20/10 Hiền ơi 🌸",
     description: "Một món quà nhỏ dành tặng Hiền nhân Ngày Phụ nữ Việt Nam 20/10",
+    images: ['/avatar.jpg'],
   },
 };
 

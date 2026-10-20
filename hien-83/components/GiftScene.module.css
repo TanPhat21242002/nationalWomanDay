@@ -139,7 +139,53 @@
 }
 
 @media (max-width: 480px) {
-  .cardsGrid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .inner {
+    padding: 0 4px;
+  }
+  .title {
+    font-size: clamp(1.6rem, 6.5vw, 2.2rem);
+    margin-bottom: 6px;
+  }
+  .subtitle {
+    font-size: 0.88rem;
+    margin-bottom: 24px;
+  }
+  .giftLid {
+    width: 130px;
+    height: 36px;
+  }
+  .giftBody {
+    width: 146px;
+    height: 105px;
+  }
+  .giftBow {
+    font-size: 2.3rem;
+    top: -28px;
+  }
+  .cardsGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .card {
+    padding: 14px 10px;
+    min-height: 115px;
+    border-radius: 16px;
+  }
+  .cardEmoji {
+    font-size: 1.8rem;
+  }
+  .cardTitle {
+    font-size: 1.15rem;
+  }
+  .cardText {
+    font-size: 0.76rem;
+    line-height: 1.4;
+  }
+  .allDoneText {
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+  }
 }
 
 .card {
