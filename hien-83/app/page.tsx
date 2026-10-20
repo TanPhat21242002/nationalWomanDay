@@ -1,11 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import LandingScene from '@/components/LandingScene';
-import GiftScene from '@/components/GiftScene';
-import GardenScene from '@/components/GardenScene';
-import LetterScene from '@/components/LetterScene';
-import PetalRain from '@/components/PetalRain';
+import LandingScene from '../components/LandingScene';
+import GiftScene from '../components/GiftScene';
+import GardenScene from '../components/GardenScene';
+import LetterScene from '../components/LetterScene';
+import PetalRain from '../components/PetalRain';
 
 export type Scene = 'landing' | 'gift' | 'garden' | 'letter';
 
